@@ -19,23 +19,24 @@ Ensure you have Python 3.6+ installed on your system. FlaskColorWorks relies on 
 
 Follow these steps to get FlaskColorWorks running on your local machine:
 
-1. **Clone the repository**:
+#### Clone the repository**:
    ```bash
    git clone https://github.com/raihan-js/FlaskColorWorks.git
+   ```
 Navigate to the project directory:
 
+```bash
 cd FlaskColorWorks
-
+```
 #### Install dependencies:
 
+```bash
 pip install -r requirements.txt
-Run the application:
-
-flask run
-
-or
-
+```
+#### Run the application:
+```bash
 python app.py
+```
 Open your web browser and go to http://127.0.0.1:5000/ to start using FlaskColorWorks.
 
 ### Usage
@@ -55,7 +56,7 @@ FlaskColorWorks is open-sourced under the MIT License. See the LICENSE file for 
 
 Your `requirements.txt` file should list all Python libraries that your project depends on. You can generate this file by activating your project's virtual environment, running your application to verify that all dependencies are installed, and then using `pip freeze`. Here’s a basic example:
 
-
+```bash
 Flask==2.0.1
 Werkzeug==2.0.1
 torch==1.8.1
@@ -63,6 +64,6 @@ torchvision==0.9.1
 opencv-python-headless==4.5.2.52
 Pillow==8.2.0
 numpy==1.20.3
-
+```
 
 Adjust the versions based on the current versions you're using. Note that opencv-python-headless is used instead of opencv-python to reduce the number of unnecessary GUI dependencies for server deployments.
